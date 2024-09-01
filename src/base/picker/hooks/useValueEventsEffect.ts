@@ -1,12 +1,13 @@
 import {useMemo, useRef} from 'react';
 import {usePrevious, useStableCallback} from '@rozhkov/react-useful-hooks';
-import debounce from '../../../utils/debounce';
+import debounce from '@utils/debounce';
 import {
   runOnJS,
   SharedValue,
   useAnimatedReaction,
 } from 'react-native-reanimated';
 const useValueEventsEffect = <ItemT>(
+  // in
   {
     valueIndex,
     data,
@@ -21,6 +22,7 @@ const useValueEventsEffect = <ItemT>(
     touching: boolean;
     useRunOnJS?: boolean;
   },
+  // events
   {
     onValueChanging,
     onValueChanged,
@@ -50,16 +52,14 @@ const useValueEventsEffect = <ItemT>(
       }
     }
   });
+
   const onStableValueChanged = useStableCallback(() => {
     if (onValueChanged === undefined || touching) {
       return;
     }
     const activeIndex = activeIndexRef.current;
     if (activeIndex !== valueIndex) {
-      onValueChanged({
-        index: activeIndex,
-        item: data[activeIndex]!,
-      });
+      onValueChanged({index: activeIndex, item: data[activeIndex]!});
     }
   });
   const onValueChangedDebounce = useMemo(
@@ -67,7 +67,7 @@ const useValueEventsEffect = <ItemT>(
     [onStableValueChanged],
   );
 
-  // this function must be defined outside of the useAnimatedReaction
+  // this function must be defined outside the useAnimatedReaction
   const wrapper = (offset: number) => {
     onValueChangedDebounce();
     const index = getIndex(offset);
@@ -95,4 +95,5 @@ const useValueEventsEffect = <ItemT>(
     onValueChangedDebounce();
   }
 };
+
 export default useValueEventsEffect;
