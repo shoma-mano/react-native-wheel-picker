@@ -3,6 +3,21 @@ This is fork of https://github.com/quidone/react-native-wheel-picker to solve pr
 [AUTHOR]: https://github.com/rozhkovs
 [FEEDBACK_GITHUB]: https://github.com/quidone/react-native-wheel-picker-feedback
 
+# Using with @gorhom/bottom-sheet
+```typescript
+        <BottomSheet
+          snapPoints={[250]}
+          style={styles.bottomSheet}
+          ref={bottomSheetRef}
+          enablePanDownToClose={true}
+          index={-1}
+        >
+          <SimplePicker
+            renderScrollView={BottomSheetScrollView as RenderScrollView}
+          />
+        </BottomSheet>
+```
+
 # React Native Wheel Picker
 <p>
   <a href="https://github.com/quidone/react-native-wheel-picker/blob/HEAD/LICENSE">
