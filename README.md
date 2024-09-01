@@ -1,4 +1,4 @@
-This is fork of https://github.com/quidone/react-native-wheel-picker to solve problem when using
+This is fork of https://github.com/quidone/react-native-wheel-picker to solve problem when using with @gorhom/bottom-sheet
 
 [AUTHOR]: https://github.com/rozhkovs
 [FEEDBACK_GITHUB]: https://github.com/quidone/react-native-wheel-picker-feedback
