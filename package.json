@@ -1,5 +1,5 @@
 {
-  "name": "@quidone/react-native-wheel-picker",
+  "name": "@shoma-mano/react-native-wheel-picker",
   "version": "1.0.1",
   "description": "Picker is a UI component for selecting an item from a list of options.",
   "main": "dest/commonjs/index",
@@ -49,7 +49,7 @@
     "select",
     "field"
   ],
-  "repository": "https://github.com/quidone/react-native-wheel-picker",
+  "repository": "https://github.com/shoma-mano/react-native-wheel-picker",
   "author": "Sergey Rozhkov <rozhkovse1@gmail.com> (https://github.com/quidone/react-native-wheel-picker)",
   "license": "MIT",
   "bugs": {

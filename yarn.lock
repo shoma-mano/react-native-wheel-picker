@@ -2917,45 +2917,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@quidone/react-native-wheel-picker@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@quidone/react-native-wheel-picker@workspace:."
-  dependencies:
-    "@babel/cli": ^7.21.5
-    "@babel/plugin-syntax-typescript": ^7.21.4
-    "@commitlint/config-conventional": ^17.0.2
-    "@evilmartians/lefthook": ^1.2.2
-    "@gorhom/bottom-sheet": "*"
-    "@react-native-community/eslint-config": ^3.0.2
-    "@release-it/conventional-changelog": ^5.0.0
-    "@rozhkov/react-useful-hooks": ^1.0.8
-    "@types/jest": ^28.1.2
-    "@types/react": ^18.2.0
-    "@types/react-native": 0.71.6
-    babel-plugin-module-resolver: ^4.1.0
-    commitlint: ^17.0.2
-    del-cli: ^5.0.0
-    eslint: ^8.4.1
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-prettier: ^4.0.0
-    jest: ^28.1.1
-    pod-install: ^0.1.0
-    prettier: ^2.0.5
-    react: 18.2.0
-    react-native: 0.71.6
-    react-native-builder-bob: ^0.20.0
-    react-native-reanimated: next
-    release-it: ^15.0.0
-    typescript: ^4.5.2
-  peerDependencies:
-    "@gorhom/bottom-sheet": "*"
-    react: ^16.8 || ^17 || ^18
-    react-native: ">=0.71.6"
-    react-native-gesture-handler: "*"
-    react-native-reanimated: "*"
-  languageName: unknown
-  linkType: soft
-
 "@react-native-community/cli-clean@npm:^10.1.1":
   version: 10.1.1
   resolution: "@react-native-community/cli-clean@npm:10.1.1"
@@ -3220,6 +3181,45 @@ __metadata:
   checksum: e2b16a0e5fd2f7571ce7bd601ce46cf2a4be6a031b5a481e5f0153231cec63710d7a2751a65f8468e2dc5d447e4b726d9be68fdb924dd243a175e40baa8c2ab1
   languageName: node
   linkType: hard
+
+"@shoma-mano/react-native-wheel-picker@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@shoma-mano/react-native-wheel-picker@workspace:."
+  dependencies:
+    "@babel/cli": ^7.21.5
+    "@babel/plugin-syntax-typescript": ^7.21.4
+    "@commitlint/config-conventional": ^17.0.2
+    "@evilmartians/lefthook": ^1.2.2
+    "@gorhom/bottom-sheet": "*"
+    "@react-native-community/eslint-config": ^3.0.2
+    "@release-it/conventional-changelog": ^5.0.0
+    "@rozhkov/react-useful-hooks": ^1.0.8
+    "@types/jest": ^28.1.2
+    "@types/react": ^18.2.0
+    "@types/react-native": 0.71.6
+    babel-plugin-module-resolver: ^4.1.0
+    commitlint: ^17.0.2
+    del-cli: ^5.0.0
+    eslint: ^8.4.1
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-prettier: ^4.0.0
+    jest: ^28.1.1
+    pod-install: ^0.1.0
+    prettier: ^2.0.5
+    react: 18.2.0
+    react-native: 0.71.6
+    react-native-builder-bob: ^0.20.0
+    react-native-reanimated: next
+    release-it: ^15.0.0
+    typescript: ^4.5.2
+  peerDependencies:
+    "@gorhom/bottom-sheet": "*"
+    react: ^16.8 || ^17 || ^18
+    react-native: ">=0.71.6"
+    react-native-gesture-handler: "*"
+    react-native-reanimated: "*"
+  languageName: unknown
+  linkType: soft
 
 "@sideway/address@npm:^4.1.3":
   version: 4.1.4
